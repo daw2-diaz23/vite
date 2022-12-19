@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/e5153cd762.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="../src/assets/index.e1d607b3.js"></script>
+    <link rel="stylesheet" href="../src/assets/index.4d1d32a8.css">
+  </head>
+  <body>
+    <div class="col-12">
+      <header>
+          <div class="constainer-fluid color2">
+            <div class="row">
+              <div class="col d-flex justify-content-between mt-2">
+                <h1 class="text-white">El juego del Tetris</h1>
+                <button type="button" class="btn btn-primary me-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+              </div>
+              <hr class="white mt-2">
+            </div>
+          </div>
+      </header>
+      <main class="pt-3 white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 offset-lg-2 col-lg-2 order-last order-lg-0 col-md-12 ">
+              <div class="text-center">
+                <div class="border shadow rounded m-2 mb-3 p-2 pb-5">
+                  <p class="fs-3 white">Guardado</p>
+                  <div class="pieza">
+                    <div class="p-fila d-flex justify-content-center">
+                      <div class="celda bg-primary"></div>
+                      <div class="celda bg-primary"></div>
+                    </div>
+                    <div class="p-fila d-flex justify-content-center">
+                      <div class="celda bg-primary"></div>
+                      <div class="celda bg-primary"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border shadow rounded m-2 p-2">
+                  <p class="fs-4">Tiempo </p>
+                  <p class="fs-5">01:45</p>
+                </div>
+                <div class="border shadow rounded m-2 p-2">
+                  <p class="fs-4">Nivel: </p>
+                  <p class="fs-5">1</p>
+                  <hr>
+                  <p class="fs-4">Puntuación:</p>
+                  <p class="fs-5">120.000</p>
+                  <hr>
+                  <p class="fs-4  ">Lineas: </p>
+                  <p class="fs-5">12</p> 
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-10 col-lg-4 pt-2">
+              <div class="d-flex justify-content-center">
+                <div id="panel" class="border rounded">
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda bg-danger"></div>
+                    <div class="celda bg-danger"></div>
+                    <div class="celda bg-danger"></div>
+                    <div class="celda bg-danger"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                  <div class="p-fila">
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                    <div class="celda"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 justify-content-center d-flex ">
+              <div class="text-center">
+                <div class="border shadow rounded m-2 mb-3 pt-2 p-5">
+                  <p class="fs-4">Siguiente</p>
+                  <div class="pieza">
+                      <div class="p-fila d-flex justify-content-center">
+                        <div class="celda bg-primary"></div>
+                        <div class="celda bg-primary"></div>
+                      </div>
+                      <div class="p-fila d-flex justify-content-center">
+                        <div class="celda bg-primary"></div>
+                        <div class="celda bg-primary"></div>
+                      </div>
+                    </div>
+                  <hr>
+                  <div class="pieza d-flex item-align-center">
+                    <div class="p-fila item-align-center" style="margin-left: 5%;">
+                      <div class="celda bg-danger"></div>
+                      <div class="celda bg-danger"></div>
+                      <div class="celda bg-danger"></div>
+                      <div class="celda bg-danger"></div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="pieza">
+                    <div class="p-fila d-flex justify-content-center">
+                      <div class="celda bg-primary"></div>
+                      <div class="celda bg-primary"></div>
+                    </div>
+                    <div class="p-fila d-flex justify-content-center">
+                      <div class="celda bg-primary"></div>
+                      <div class="celda bg-primary"></div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="border rounded m-2 p-2 shadow text-center  ">
+                  <div class="m-2 p-2 text-center col-12">
+                    <button type="button" class="btn bg-success col-8 text-white">JUGAR</button>
+                  </div>
+                  <div class="m-2 p-2 text-center col-12">
+                    <button type="button" class="btn btn-primary col-8 TEX">PAUSA</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="text-center text-white">
+              <p>Pau Diaz</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <a href="primerapagina.html"><input class="btn w-100 mt-3 bg-warning  text-end"type="submit" value="LOGOUT"></a>
+        </div>
+        <div class="text-center">
+            <a href="rakingj.html"><input class="btn w-100 mt-3 bg-warning  "type="submit" value="VER RAKING JUGADORES"></a>
+        </div>
+        <div>
+            <a href="perfil.html"><input class="btn w-100 mt-3 bg-warning  "type="submit" value="VER Y EDITAR PERFIL"></a>
+        </div>
+        <div>
+            <a href="partidasj.html"><input class="btn w-100 mt-3 bg-warning  "type="submit" value="VER PARTIDAS JUGADAS"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

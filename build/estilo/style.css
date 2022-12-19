@@ -1,0 +1,58 @@
+body {
+    background-image: url("../fondo.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    
+   
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 15px;
+}
+
+
+
+.login form input[type="submit"] {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.celda{
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  background-color: #111111;
+  box-sizing: border-box;
+}
+
+.p-fila{
+  display: flex;
+}
+
+.p-fila2{
+  display: inline;
+}
+#panel{
+  width: 300px;
+  border: 1px solid black;
+}
+
+.bordeb{
+  border: 1px solid white
+}
+
+h1 , p, button{
+  font-family: 'Bungee', cursive;
+} 
+
+.white{
+  color: white;
+}
